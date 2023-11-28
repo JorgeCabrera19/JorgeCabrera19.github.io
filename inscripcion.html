@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Establecimiento Educativo</title>
+  <style>
+ 
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+
+
+    header {
+      background-color: #4285F4;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    
+
+    .hero-section h2 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+
+    .feature-box {
+      flex: 1;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #4285F4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    input[type="submit"]:hover:enabled {
+      background-color: #1c4cff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Colegio La Paz</h1>
+    <p>Inscripción 2023</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="inscripcion.html">Recargar</a>
+  </nav>
+
+  <div class="hero-section">
+   
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>Regístrate</h2>
+      <form id="registroForm">
+        <input type="text" id="nombre" placeholder="Nombre"><br>
+        <input type="password" id="contrasena" placeholder="Contraseña"><br>
+        <input type="submit" id="botonEnviar" value="Aceptar">
+      </form>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <footer>
+    <p>&copy; 2023 Establecimiento Educativo</p>
+  </footer>
+
+  <script>
+    document.getElementById('registroForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevenir el envío del formulario para el manejo personalizado
+
+      const nombre = document.getElementById('nombre').value;
+      const contrasena = document.getElementById('contrasena').value;
+      const botonEnviar = document.getElementById('botonEnviar');
+
+      if (nombre === 'alumno' && contrasena === '123') {
+        alert('¡Usuario encontrado!');
+        window.location.href = 'curso.html';
+      } else {
+        alert('¡Usuario incorrecto!');
+       
+      }
+
+
+    });
+  </script>
+
+</body>
+</html>

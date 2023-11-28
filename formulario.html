@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario Leyes de Newton</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+
+    header {
+      background-color: #4285F4;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    
+
+    .hero-section h2 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+
+    .feature-box {
+      flex: 1;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+
+   
+
+    h1, h2, p {
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    select {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+    display: block;
+    width: 200px; /* Ancho deseado */
+    margin: 20px auto; /* Centrar horizontalmente */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4285F4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    ba
+
+
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>Colegio La Paz</h1>
+    <p>Inscripción 2023</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="curso.html">Curso</a>
+    <a href="inscripcion.html">Inscribirme</a>
+  </nav>
+
+  <div class="hero-section">
+   
+  </div>
+
+  <div class="container">
+    <h1>Cuestionario sobre las Leyes de Newton</h1>
+
+    <form id="cuestionario">
+      <h2>Pregunta 1:</h2>
+      <p>¿Quién enunció las leyes de movimiento?</p>
+      <input type="text" id="pregunta1">
+
+      <h2>Pregunta 2:</h2>
+      <p>¿Cuál es la primera ley de Newton?</p>
+      <select id="pregunta2">
+        <option value="0">Selecciona una opción</option>
+        <option value="1">Ley de la inercia</option>
+        <option value="2">Ley de acción y reacción</option>
+        <option value="3">Ley de la gravitación universal</option>
+      </select>
+
+      <h2>Pregunta 3:</h2>
+      <p>¿Cuál es la fórmula de la segunda ley de Newton?</p>
+      <input type="text" id="pregunta3">
+
+      <h2>Pregunta 4:</h2>
+      <p>¿Qué es la fuerza?</p>
+         
+      <table align="center">
+      <tr>
+      <td align="left">
+      <input type="radio" name="pregunta4" value="1"> Magnitud vectorial
+      </td>
+      </tr>
+
+      <tr>
+      <td td align="left">
+      <input type="radio" name="pregunta4" value="0"> Energía
+      </td>
+      </tr>
+
+      <tr>
+      <td td align="left">
+      <input type="radio" name="pregunta4" value="0"> Velocidad
+      </td>
+      </tr>
+
+
+      </table>
+        
+        
+        
+     
+      
+     
+
+
+      <h2>Pregunta 5:</h2>
+      <p>¿Cuál de estas opciones describe la tercera ley de Newton?</p>
+      
+      
+      <table align="center">
+      <tr>
+      <td align="left">
+      <input type="checkbox" id="pregunta5a" value="0"> A un cuerpo no pueden aplicársele dos fuerzas distintas al <br>mismo tiempo.
+      </td>
+      </tr>
+
+      <tr>
+      <td align="left">
+      <input type="checkbox" id="pregunta5b" value="1"> A toda acción corresponde una reacción<br> igual y opuesta.
+      </td>
+      </tr>
+
+      <tr>
+      <td align="left">
+      <input type="checkbox" id="pregunta5c" value="0"> Un cuerpo en reposo permanece en reposo y un cuerpo en movimiento <br>permanece en movimiento.
+      </td>
+      </tr>
+
+
+      </table>
+
+      <h2>Pregunta 6:</h2>
+      <p>¿Cuál es la unidad de medida de la fuerza en el Sistema Internacional de Unidades (SI)?</p>
+      <input type="text" id="pregunta6">
+
+      <br><br>
+      <input type="submit" value="Calcular Puntaje" onclick="calcularPuntaje()">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </form>
+  </div>
+
+  
+
+  <script>
+    function calcularPuntaje() {
+      let puntaje = 0;
+
+      // Pregunta 1
+      const respuesta1 = document.getElementById('pregunta1').value.toLowerCase();
+      if (respuesta1 === 'Isaac Newton' || respuesta1 === 'isaac newton') {
+        puntaje += 16.67;
+      }
+
+      // Pregunta 2
+      const respuesta2 = document.getElementById('pregunta2').value;
+      if (respuesta2 === '1') {
+        puntaje += 16.67;
+      }
+
+      // Pregunta 3
+      const respuesta3 = document.getElementById('pregunta3').value.toLowerCase();
+      if (respuesta3 === 'f = m * a' || respuesta3 === 'f=ma' || respuesta3 === 'f = ma') {
+        puntaje += 16.67;
+      }
+
+      // Pregunta 4
+      const respuesta4 = document.querySelector('input[name="pregunta4"]:checked');
+      if (respuesta4 !== null && respuesta4.value === '1') {
+        puntaje += 16.67;
+      }
+
+      // Pregunta 5
+      const checkbox5a = document.getElementById('pregunta5a').checked;
+      const checkbox5b = document.getElementById('pregunta5b').checked;
+      const checkbox5c = document.getElementById('pregunta5c').checked;
+      if (checkbox5a === false && checkbox5b === true && checkbox5c === false) {
+        puntaje += 16.67;
+      }
+
+      // Pregunta 6
+      const respuesta6 = document.getElementById('pregunta6').value.toLowerCase();
+      if (respuesta6 === 'newton' || respuesta6 === 'Newton' || respuesta6 === 'n' || respuesta6 === 'N') {
+        puntaje += 16.67;
+      }
+
+      alert(`Puntaje obtenido: ${puntaje.toFixed(2)} / 100`);
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2023 Establecimiento Educativo</p>
+  </footer>
+
+</body>
+</html>
